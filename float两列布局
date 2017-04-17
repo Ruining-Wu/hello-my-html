@@ -4,24 +4,22 @@
     <meta charset="UTF-8">
     <title>Document</title>
 <style type="text/css">
-*{
-  margin:0px;
-  padding: 0px;
+
+body{
+  margin: 0;
+  padding: 0;
+  font-size: 30px;
+  font-weight: bold;
 }
 
 .main-content{
-background-color: black;
-}
-
-.main-header{
-  width:100%;
-  height:500px;
-  background-color: blue;
+  text-align: center;
+  line-height: 300px;
 }
 
 .main-left{
   height: 300px;
-  width: 30%;
+  width: 50%;
   background-color: red;
   float: left;
 }
@@ -34,9 +32,10 @@ background-color: black;
 
 </style>
 <body>
-  <div></div>
-  <div calss="main-header"></div>
-<div class="main-left">1</div>
-<div class="main-right">2</div>
+  <div class="main-content">
+    <div class="main-left">1</div>
+    <div class="main-right">2</div>
+  </div>
+
 </body>
 </html>

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>登录QQ邮箱</title>
+	<link rel="icon" href="/favicon.ico" type="image/x-icon">
+</head>
+<style>
+*{
+	margin: 0;
+	padding:0;
+}
+html,body{
+	height: 100%;
+	overflow: hidden;
+	font-family: "微软雅黑";
+}
+a{
+	text-decoration: none;
+}
+.header_link a:link,a:visited{
+	color: #1D5494;
+}
+.header_link a:hover,a:active{
+	text-decoration: underline;
+}
+	.header{
+		width: 100%;
+		height: 7%;
+		background-color: #eff4fa;
+		font-size: 10px;
+		border-bottom:1px solid #d6dfea;
+		overflow: hidden; 
+	}
+	img{
+		background-color: transparent;
+		vertical-align: middle;
+		width: 185px;
+		height: 35px;
+		margin: 12px 40px;
+	}
+	.header_link{
+		float: right;
+		font-size: 12px;
+		color: #1D5494;
+		padding-right:40px;
+		margin-top: 25px; 
+		font-family: "微软雅黑";
+	}
+	.header_link a{
+	color: #1D5494;
+	}
+.content{
+	width: 100%;
+	margin:32px auto;
+	padding: 0 24px;
+}
+.content_wrapper{
+	padding-top: 40px;
+	margin: 0 20px 60px 25px;
+	min-height: 372px;
+	float: left;
+}
+.login_pictures{
+	position: relative;
+	margin-right: 395px;
+	margin-left:420px;
+	margin-top: 35px;
+
+}
+.login_pictures_picture{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	height: 400px;
+	background-repeat: no-repeat;
+
+}
+.login_picture_title{
+	line-height: 26px;
+	font-size: 24px;
+	color: #6f95c8;
+	font-weight: normal;
+	font-family: "微软雅黑";
+	margin-bottom: 22px;
+
+}
+p{
+	font-size: 14px;
+	line-height: 22px;
+}
+.login_pictures_info{
+	font-size: 12px;
+	margin-top: 6px;
+}
+.login{
+	height: 380px;
+	width: 350px;
+	border:1px solid #6f95c8;
+	border-radius: 10px;
+	float: left;
+	margin-top: 40px;
+}
+.login_header{
+	height: 60px;
+	background-color: #F9FBFE;
+	border-bottom:1px solid #C0CDD9;
+	border-radius: 10px 10px 0 0;
+}
+.login_text{
+	color: #999;
+	display: inline-block;
+	height: 45px;
+	line-height: 45px;
+	margin-left: 50px;
+	margin-right: 50px;
+	margin-top: 8px;
+}
+.login_text a:link,a:visited{
+	color: #999999;
+}
+.login_text a:hover,a:active{
+	color: #333333;
+}
+.login_text_right a:link,a:visited{
+	color: #999999;
+}
+.login_text_right a:hover,a:active{
+	color: #333333;
+}
+.login-content{
+	text-align: center;
+	margin-top: 20px;
+}
+input[type="text"],input[type="password"]{
+	width: 80%;
+	height: 30px;
+	margin-bottom:20px;
+	padding:2px;
+	background-color: transparent;
+	border: 1px solid #96A5B4;
+	border-radius: 2px;
+	font-size:15px;
+	outline: none;
+	color:#B1AAAA;
+}
+.login_info{
+	width: 80%;
+	margin-left: 25px;
+}
+input[type="checkbox"]{
+	position: relative;
+    padding-left: 30px;
+    border: #F0F8FF;
+    display: inline-block;
+    font-size: 13px;
+    color: #EEE;
+}
+.next{
+	font-size: 12px;
+}
+.loading{
+	text-align: center;
+	margin-top: 20px;
+}
+input[type="submit"]{
+	width: 80%;
+	padding: 10px 0;
+	font-size: 16px;
+	font-weight: 100;
+	background-color: #5A98DE;
+	color: #fff;
+	border: 1px solid rgba(238,238,238,0.41);
+	border-radius: 4px;
+	border-width: thin;
+	cursor: pointer;
+	outline: none;
+	text-decoration: none;
+}
+.login_other{
+	font-size: 10px;
+	color: #1D5494;
+	margin-top: 60px;
+	float: right;
+	margin-right: 40px;
+}
+.login_other > a:link,a:visited{
+	color: #6F95C8;
+}
+.login_other > a:hover,a:active{
+	color: #6F95C8;
+	text-decoration: underline;
+}
+.footer{
+	background-color: #eff4fa;
+	height: 5%;
+	margin-top: 810px;
+	text-align: center;
+	font-size: 12px;
+
+}
+.footer_info{
+	margin-top: 5px;
+}
+
+</style>
+<body>
+<div class="header">
+	<a href="https://mail.qq.com/"><img src="images/logo.png" alt=""></a>
+	<div class="header_link">
+		<a href="https://ui.ptlogin2.qq.com/cgi-bin/login?style=9&appid=522005705&daid=4&s_url=https%3A%2F%2Fw.mail.qq.com%2Fcgi-bin%2Flogin%3Fvt%3Dpassport%26vm%3Dwsk%26delegate_url%3D%26f%3Dxhtml%26target%3D&hln_css=http%3A%2F%2Fmail.qq.com%2Fzh_CN%2Fhtmledition%2Fimages%2Flogo%2Fqqmail%2Fqqmail_logo_default_200h.png&low_login=1&hln_autologin=%E8%AE%B0%E4%BD%8F%E7%99%BB%E5%BD%95%E7%8A%B6%E6%80%81&pt_no_onekey=1" target="_self">基本版</a>
+		| 
+		<a href="https://en.mail.qq.com/cgi-bin/loginpage">English</a>
+		| 
+		<a href="http://app.mail.qq.com/" target="_blank">手机版</a>
+		| 
+		<a href="https://exmail.qq.com/?referrer=index_top" target="_blank">企业邮箱</a>
+	</div>
+</div>	
+<div class="content">
+	<div class="content_wrapper">
+		<div class="login_pictures">
+			<div class="login_pictures_picture" style="background-image:url('https://rescdn.qqmail.com/zh_CN/htmledition/images/webp/tg-smile1e9c5d.jpg');background-position:234px 130px;"></div>
+			<div class="login_pictures_txt">
+				<p class="login_picture_title">QQ邮箱，常联系！</p>
+				<p>1982年，第一张电脑笑脸诞生</p>
+				<p>今天，人们已经习惯用它来表达心情</p>
+				<p>现在，您也可以在邮件里</p>
+				<p>用:-)来传达一个微笑的表情</p>
+				<p class="login_pictures_info"><a href="https://mail.qq.com/cgi-bin/readtemplate?check=false&t=about_symbolization" target="_blank">了解更多表情符号</a></p>
+			</div>
+		</div>
+	</div>
+	<div class="login">
+		<div class="login_header">
+			<span class="login_text"><a href="">快速登录</a></span>
+			<span class="login_text_right"><a href="">账号密码登录</a></span>
+		</div>
+		<div class="login-content">
+			<input type="text" name="userid" value="支持QQ号/邮箱/手机号登录">
+			<input type="password" name="password" value="QQ密码">
+		</div>
+		<div class="login_info">
+			<input type="checkbox"><span class="next">下次自动登录</span>
+		</div>
+		<div class="loading">
+			<input type="submit" name="submit" value="登 录">
+		</div>
+		<div class="login_other">
+			<a href="https://aq.qq.com/v2/uv_aq/html/reset_pwd/pc_reset_pwd_input_account.html?v=4.0&old_ver_account=" target="_self">忘了密码</a>
+			| 
+			<a href="https://ssl.zc.qq.com/v3/index-chs.html">注册新账号</a>
+			| 
+			<a href="http://support.qq.com/discuss/350_1.shtml" target="_blank">意见反馈</a>
+		</div>
+	</div>
+</div>
+<div class="footer">
+	<div class="footer_info">
+		<a href="https://www.tencent.com/zh-cn/index.html" target="_self">关于腾讯</a>
+		| 
+		<a href="http://mail.qq.com/cgi-bin/readtemplate?check=false&t=mail_clause" target="_self">服务条款</a>
+		| 
+		<a href="http://kf.qq.com/product/email.html" target="_blank">客服中心</a>
+		| 
+		<a href="http://mail.qq.com/contact_us.html" target="_blank">联系我们</a>
+		| 
+		<a href="http://service.mail.qq.com/" target="_blank">帮助中心</a>
+		| 
+		<span style="color:#868686">&copy;1998 - 2017 Tencent Inc. All Rights Reserved.</span>
+	</div>
+
+</div>
+</body>
+</html>
